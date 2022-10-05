@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            inputBorder: '#6448fe',
+            activeInputB: '#900594',
+            inputerror: '#ff5252',
+            lightgray: '#dedddf',
+            darkgray: '#8e8593',
+            darkviolet: '#21092f',
+
+
+          },
+          fontFamily:{
+             grotesk: ['space Grotesk','sans-serif']
+          },
+          backgroundImage:{
+            'hero-pattern': "url(interactive-card-details-form-main/images/bg-main-desktop.png)"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body class="font-grotesk "> 
+
+ <div class="flex flex-col lg:flex-row lg:space-x-96 ">
+
+
+  <div class="bg-darkviolet pb-8  lg:bg-hero-pattern  ">
+    
+ 
+
+
+    <div class="flex ">
+ 
+    
+ 
+ 
+       <div class="mx-auto ">
+         <div class="mt-20 ml-8 ">
+           <img class="w-80 "  src="./images/bg-card-back.png" alt="">
+           <div>
+             <div class="absolute  top-16 ml-60 mt-20 text-white ">
+               <h2 class="text-2xl">000</h2>
+             </div>
+            </div>
+        </div>
+  
+        <div class="">
+            <img class="w-80 absolute left-4 top-44" src="./images/bg-card-front.png" alt="">
+        </div>
+       </div>  
+    </div>
+ 
+ 
+    <div class="absolute ml-12 top-48">
+ 
+     <div>
+       <img class=""  src="./images/card-logo.svg" alt="">
+     </div>
+ 
+     <div class="mt-6">
+       <h2 class="text-white text-2xl">0000 0000  0000 0000 </h2> 
+     </div>
+ 
+ 
+     <div class="flex mt-4 text-white space-x-24">
+       <div>
+         <h2>JANE APPLESEED</h2>
+       </div>
+ 
+       <div>
+       00/00
+       </div>
+     </div>
+ 
+    </div>
+ 
+   </div>
+   
+  
+  
+ 
+ 
+   <div class="mt-28 bg-white ">
+ 
+  
+     <div class="flex flex-col space-y-6 ">
+      
+ 
+       <div class="mx-auto  space-y-2 tracking-widest font-bold">
+         <h2>CARDHOLDER NAME</h2>
+          <input type="name" name="" id="" class="border w-full py-2 rounded-lg px-20" placeholder="e.g Jane Appleseed">
+        </div>
+        
+   
+       <div class="mx-auto space-y-2 tracking-widest font-bold">
+         <h2>CARD NUMBER</h2>
+         <input type="name" name="" id="" class="border w-full py-2 rounded-lg px-20" placeholder="e.g 1234 5678 9123 0000">
+       </div>
+ 
+ 
+      
+       <div class="mx-auto space-y-2 tracking-widest font-bold">
+         <h2>Exp. Date (MM/YY)  <span class="ml-16">CVC</span></h2>
+         <div class="flex flex-row space-x-">
+   
+           <div class="space-x-4">
+             
+               <input type="year" name="" id="" class="border w-20 py-1 rounded-lg" placeholder="MM">
+            
+           
+ 
+          
+            
+             <input type="year" class="border w-20 py-1 rounded-lg" placeholder="YY">
+            
+            
+  
+            
+             
+             <input type="year" class="border w-40 py-1 rounded-lg" placeholder="
+             e.g. 123">
+           
+             
+           </div>
+          
+ 
+         </div>
+       </div>
+     
+ 
+     
+       <div class="flex">
+           <button class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6">
+            <h2 class="text-center">Confirm</h2>
+           </button>
+         
+       </div>
+  
+      </div>
+  </div>
+
+
+
+ </div>
+
+
+   <!--- 0000 0000 0000 0000
+    Jane Appleseed
+    00/00
+  
+    000
+  
+    Cardholder Name
+    e.g. Jane Appleseed
+  
+    Card Number
+    e.g. 1234 5678 9123 0000
+  
+    Exp. Date (MM/YY)
+    MM
+    YY
+  
+    CVC
+    e.g. 123
+  
+    Confirm--->
+  
+    <!-- Completed state start 
+  
+    Thank you!
+    We've added your card details
+    Continue --->
+  
+  
+ <!---- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
