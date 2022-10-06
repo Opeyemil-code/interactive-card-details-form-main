@@ -26,7 +26,9 @@
              grotesk: ['space Grotesk','sans-serif']
           },
           backgroundImage:{
-            'hero-pattern': "url(interactive-card-details-form-main/images/bg-main-desktop.png)"
+            'hero-pattern': "url(images/bg-main-desktop.png)",
+            'mobile-pattern': "url(images/bg-main-mobile.png)",
+            
           }
         }
       }
@@ -37,65 +39,68 @@
 
 <body class="font-grotesk "> 
 
- <div class="flex flex-col lg:flex-row lg:space-x-96 ">
+ <div class="flex flex-col lg:flex-row lg:space-x-80 shadow-lg pb-12">
 
 
-  <div class="bg-darkviolet pb-8  lg:bg-hero-pattern  ">
+  <div class="bg-mobile-pattern pb-8  lg:bg-hero-pattern lg:flex lg:flex-col-reverse lg:pb-36 ">
     
  
 
 
-    <div class="flex ">
+    <div class="flex lg:pb-1">
  
     
  
  
        <div class="mx-auto ">
-         <div class="mt-20 ml-8 ">
-           <img class="w-80 "  src="./images/bg-card-back.png" alt="">
+         <div class="mt-20  ">
+           <img class="w-80 lg:absolute lg:ml-64 "  src="./images/bg-card-back.png" alt="">
            <div>
-             <div class="absolute  top-16 ml-60 mt-20 text-white ">
+             <div class="absolute lg:relative top-16 ml-60 mt-20 text-white lg:ml-96 lg:left-24">
                <h2 class="text-2xl">000</h2>
              </div>
             </div>
         </div>
   
-        <div class="">
-            <img class="w-80 absolute left-4 top-44" src="./images/bg-card-front.png" alt="">
+        <div class="lg:ml-8">
+            <img class="w-80 absolute lg:left-32 left-4 top-44 lg:ml-20 lg:top-16" src="./images/bg-card-front.png" alt="">   
         </div>
        </div>  
     </div>
  
- 
-    <div class="absolute ml-12 top-48">
- 
-     <div>
-       <img class=""  src="./images/card-logo.svg" alt="">
-     </div>
- 
-     <div class="mt-6">
-       <h2 class="text-white text-2xl">0000 0000  0000 0000 </h2> 
-     </div>
- 
- 
-     <div class="flex mt-4 text-white space-x-24">
-       <div>
-         <h2>JANE APPLESEED</h2>
-       </div>
- 
-       <div>
-       00/00
-       </div>
-     </div>
- 
+
+
+
+    <div class="absolute ml-12 top-48 lg:ml-28 lg:top-20 lg:left-28">
+    <div>
+      <img class=""  src="./images/card-logo.svg" alt="">
     </div>
- 
+
+    <div class="mt-6">
+      <h2 class="text-white text-2xl">0000 0000  0000 0000 </h2> 
+    </div>
+
+
+    <div class="flex mt-4 text-white space-x-24">
+      <div>
+        <h2>JANE APPLESEED</h2>
+      </div>
+
+      <div>
+      00/00
+      </div>
+    </div>
+
    </div>
+   
+ 
+  </div>
    
   
   
  
  
+
    <div class="mt-28 bg-white ">
  
   
@@ -146,7 +151,7 @@
  
      
        <div class="flex">
-           <button class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6">
+           <button class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6 lg:w-full">
             <h2 class="text-center">Confirm</h2>
            </button>
          
