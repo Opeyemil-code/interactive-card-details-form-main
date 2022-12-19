@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<title>Frontend Mentor | Interactive card details form</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,154 +40,186 @@
 
 <body class="font-grotesk "> 
 
- <div class="flex flex-col lg:flex-row lg:space-x-80 shadow-lg pb-12">
-
-
-  <div class="bg-mobile-pattern pb-8  lg:bg-hero-pattern lg:flex lg:flex-col-reverse lg:pb-36 ">
-    
  
+    <section>
 
 
-    <div class="flex lg:pb-1">
- 
-    
- 
- 
-       <div class="mx-auto ">
-         <div class="mt-20  ">
-           <img class="w-80 lg:absolute lg:ml-64 "  src="./images/bg-card-back.png" alt="">
-           <div>
-             <div class="absolute lg:relative top-16 ml-60 mt-20 text-white lg:ml-96 lg:left-24">
-               <h2 class="text-2xl">000</h2>
-             </div>
-            </div>
-        </div>
-  
-        <div class="lg:ml-8">
-            <img class="w-80 absolute lg:left-32 left-4 top-44 lg:ml-20 lg:top-16" src="./images/bg-card-front.png" alt="">   
-        </div>
-       </div>  
-    </div>
- 
+      <div class="flex flex-col lg:flex-row lg:space-x-80 lg:shadow-lg pb-12">
 
 
-
-    <div class="absolute ml-12 top-48 lg:ml-28 lg:top-20 lg:left-28">
-    <div>
-      <img class=""  src="./images/card-logo.svg" alt="">
-    </div>
-
-    <div class="mt-6">
-      <h2 class="text-white text-2xl">0000 0000  0000 0000 </h2> 
-    </div>
-
-
-    <div class="flex mt-4 text-white space-x-24">
-      <div>
-        <h2>JANE APPLESEED</h2>
-      </div>
-
-      <div>
-      00/00
-      </div>
-    </div>
-
-   </div>
-   
- 
-  </div>
-   
-  
-  
- 
- 
-
-   <div class="mt-28 bg-white ">
- 
-  
-     <div class="flex flex-col space-y-6 ">
+        <div class="bg-mobile-pattern pb-8  lg:bg-hero-pattern lg:flex lg:flex-col-reverse lg:pb-36 ">
+          
+       
       
- 
-       <div class="mx-auto  space-y-2 tracking-widest font-bold">
-         <h2>CARDHOLDER NAME</h2>
-          <input type="name" name="" id="" class="border w-full py-2 rounded-lg px-20" placeholder="e.g Jane Appleseed">
-        </div>
+      
+          <div class="flex lg:pb-1">
+       
+          
+       
+       
+             <div class="mx-auto ">
+               <div class="mt-20 lg:mt-0  ">
+                 <img class="w-80 lg:absolute lg:ml-64 shadow-2xl lg:top-60 lg:left-4"  src="./images/bg-card-back.png" alt="">
+                <div class="top">
+                   <div class="absolute lg:relative top-16 ml-60 mt-20 text-white lg:ml-96 lg:left-28 lg:top-0 ">
+                     <p class="text-2xl" id="cvc">000</p>
+                   </div>
+                  </div> 
+              </div>  
         
-   
-       <div class="mx-auto space-y-2 tracking-widest font-bold">
-         <h2>CARD NUMBER</h2>
-         <input type="name" name="" id="" class="border w-full py-2 rounded-lg px-20" placeholder="e.g 1234 5678 9123 0000">
-       </div>
- 
- 
+              <div class="lg:ml-8">
+                  <img class="w-80 absolute lg:left-32 left-4 top-44 lg:ml-20 lg:top-8 shadow-2xl" src="./images/bg-card-front.png" alt="">   
+              </div>
+             </div>  
+          </div>
+       
       
-       <div class="mx-auto space-y-2 tracking-widest font-bold">
-         <h2>Exp. Date (MM/YY)  <span class="ml-16">CVC</span></h2>
-         <div class="flex flex-row space-x-">
-   
-           <div class="space-x-4">
-             
-               <input type="year" name="" id="" class="border w-20 py-1 rounded-lg" placeholder="MM">
-            
-           
- 
-          
-            
-             <input type="year" class="border w-20 py-1 rounded-lg" placeholder="YY">
-            
-            
-  
-            
-             
-             <input type="year" class="border w-40 py-1 rounded-lg" placeholder="
-             e.g. 123">
-           
-             
-           </div>
-          
- 
+      
+      
+          <div class="absolute ml-12 top-48 lg:ml-28 lg:top-12 lg:left-28">
+          <div>
+            <img class=""  src="./images/card-logo.svg" alt="">
+          </div>
+      
+          <div class="mt-6">
+            <p class="text-white text-2xl " id="card-num">0000 0000  0000 0000 </p> 
+          </div>
+      
+      
+          <div class="flex mt-4 text-white space-x-24">
+            <div>
+              <h2 id="card-holde">KAFAYAT ODEBUNMI</h2>
+            </div>
+      
+            <div>
+            <span class="" id="mont">00</span>
+            <span class="" id="yea">00</span>
+            </div>
+          </div>
+      
          </div>
-       </div>
-     
- 
-     
-       <div class="flex">
-           <button class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6 lg:w-full">
-            <h2 class="text-center">Confirm</h2>
-           </button>
          
+       
+        </div>
+         
+        
+        
+       
+        <div class="mt-28 bg-white ">
+ 
+  
+          <form class="flex flex-col space-y-6 ">
+           
+                
+              
+          <div class="mx-auto space-y-2 tracking-widest font-bold">
+            <h2 class="">CARDHOLDER NAME</h2>
+               <input type="text" name="" id="card-holder" class="border w-full py-2 rounded-lg px-20 " placeholder="e.g Jane Appleseed">
+               <div>
+                
+                  <p class="text-red-600 text-sm  hidden" id="null-error">Can't be blank</p>
+                
+                  <p class="text-red-600 text-sm  hidden" id="name-error">wrong format,letters only</p>
+        
+               </div>
+          </div>
+             
+        
+            <div class="mx-auto space-y-2 tracking-widest font-bold">
+              <h2>CARD NUMBER</h2>
+              <input type="name" name="" id="card-number" class="border w-full py-2 rounded-lg px-20" placeholder="e.g 1234 5678 9123 0000" maxlength="16">
+              
+              <div>
+              
+                <p class="text-red-600 text-sm hidden" id="number-error">wrong format,numbers only</p>
+
+                <p class="text-red-600 text-sm  hidden" id="null-number">Can't be blank</p>
+
+              </div>
+
+
+            </div>
+      
+      
+           
+            <div class="mx-auto space-y-2 tracking-widest font-bold">
+              <h2>Exp. Date (MM/YY)  <span class="ml-16">CVC</span></h2>
+              <div class="flex flex-row space-x-">
+        
+                <div class="space-x-4">
+                  
+                    <input type="" name="" id="month" class="border w-20 py-1 rounded-lg" placeholder="MM" maxlength="2">
+                 
+                
+      
+               
+                 
+                  <input type="year" id="year" class="border w-20 py-1 rounded-lg" placeholder="YY" maxlength="2">
+                 
+                 
+       
+                 
+                  
+                  <input type="" class="border w-40 py-1 rounded-lg" placeholder="
+                  e.g. 123" maxlength="3">
+                
+                  <p class="text-red-600 text-sm  hidden" id="expiry-error">cant be blank</p>
+                </div>
+              
+      
+              </div>
+            </div>
+          
+            
+            <button type="submit" class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6 lg:w-full" id="submit">
+              confirm
+              </button>
+          
+        </form>
+
+        
+            
+          
+
        </div>
-  
+     
+     
+     
       </div>
-  </div>
+     
+      
+         
+      
 
 
 
- </div>
 
 
-   <!--- 0000 0000 0000 0000
-    Jane Appleseed
-    00/00
-  
-    000
-  
-    Cardholder Name
-    e.g. Jane Appleseed
-  
-    Card Number
-    e.g. 1234 5678 9123 0000
-  
-    Exp. Date (MM/YY)
-    MM
-    YY
-  
-    CVC
-    e.g. 123
-  
-    Confirm--->
-  
-    <!-- Completed state start 
+
+
+
+       </div>
+      
+
+    </section>
+
+
+
+ <section class="hidden">
+    <div class="flex flex-col space-y-6">
+      <svg class="mx-auto" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+      <h2 class="mx-auto text-4xl">THANK YOU!</h2>
+      <p class="mx-auto text-darkgray text-2xl">we've added your card details</p>
+      <button class="text-white font-bold tracking-widest text-xl bg-darkviolet px- mx-auto py-2 rounded-lg w-5/6 lg:w-full mt-12">
+        Continue
+      </button>
+    </div>
+ </section>
+
+
+
+
+  <!--- state start 
   
     Thank you!
     We've added your card details
@@ -197,5 +230,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+
+
+  <script src="./script.js"></script>
 </body>
 </html>
