@@ -41,8 +41,9 @@
 <body class="font-grotesk "> 
 
  
-    <section>
-
+    <section class="">
+ 
+      <p class="text-2xl absolute top-20 lg:ml-96 z-50 lg:mt-44 lg:left-32 ml-72 mt-4 text-white" id="cvc">000</p>
 
       <div class="flex flex-col lg:flex-row lg:space-x-80 lg:shadow-lg pb-12">
 
@@ -61,9 +62,9 @@
                <div class="mt-20 lg:mt-0  ">
                  <img class="w-80 lg:absolute lg:ml-64 shadow-2xl lg:top-60 lg:left-4"  src="./images/bg-card-back.png" alt="">
                 <div class="top">
-                   <div class="absolute lg:relative top-16 ml-60 mt-20 text-white lg:ml-96 lg:left-28 lg:top-0 ">
-                     <p class="text-2xl" id="cvc">000</p>
-                   </div>
+                  <div class="absolute lg:relative top-16 ml-60 mt-20 text-white lg:ml-96 lg:left-28 lg:top-0">
+                   <!---- <p class="text-1xl" id="cvc">000</p> --->
+                   </div> 
                   </div> 
               </div>  
         
@@ -76,23 +77,32 @@
       
       
       
-          <div class="absolute ml-12 top-48 lg:ml-28 lg:top-12 lg:left-28">
+          <div class="absolute ml-10 top-48 lg:ml-28 lg:top-12 lg:left-28">
           <div>
             <img class=""  src="./images/card-logo.svg" alt="">
           </div>
       
           <div class="mt-6">
-            <p class="text-white text-2xl " id="card-num">0000 0000  0000 0000 </p> 
+            <p class="text-white text-2xl " id="card-num">
+              <span id="one">0000</span>
+              <span id="two">0000</span>
+              <span id="three">0000</span>
+              <span id="four">0000</span>
+            </p> 
           </div>
       
       
           <div class="flex mt-4 text-white space-x-24">
             <div>
-              <h2 id="card-holde">KAFAYAT ODEBUNMI</h2>
+              <h2 id="card-holde"  class="uppercase">
+                <span class="first">kafayat</span>
+                <span class="second">odebunmi</span>
+              </h2>
             </div>
       
             <div>
             <span class="" id="mont">00</span>
+            <span>/</span>
             <span class="" id="yea">00</span>
             </div>
           </div>
@@ -105,7 +115,7 @@
         
         
        
-        <div class="mt-28 bg-white ">
+        <div class="mt-28 bg-white hidde ">
  
   
           <form class="flex flex-col space-y-6 ">
@@ -133,7 +143,7 @@
               
                 <p class="text-red-600 text-sm hidden" id="number-error">wrong format,numbers only</p>
 
-                <p class="text-red-600 text-sm  hidden" id="null-number">Can't be blank</p>
+                <p class="text-red-600 text-sm  hidden" id="null-number">Card digit must be 16</p>
 
               </div>
 
@@ -160,10 +170,13 @@
        
                  
                   
-                  <input type="" class="border w-40 py-1 rounded-lg" placeholder="
+                  <input type="" id="cv" class="border w-40 py-1 rounded-lg" placeholder="
                   e.g. 123" maxlength="3">
                 
-                  <p class="text-red-600 text-sm  hidden" id="expiry-error">cant be blank</p>
+                  <p class="text-red-600 text-sm  hidden" id="expiry-error">can't be blank</p>
+
+                  <p class="text-red-600 text-sm  hidden" id="expir-error">wrong format, letters only</p>
+
                 </div>
               
       
@@ -201,12 +214,15 @@
        </div>
       
 
+
+
+      
     </section>
 
 
 
- <section class="hidden">
-    <div class="flex flex-col space-y-6">
+<!----> <section class="hidden" id="hid">
+    <div class="flex flex-col space-y-6 absolute ">
       <svg class="mx-auto" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
       <h2 class="mx-auto text-4xl">THANK YOU!</h2>
       <p class="mx-auto text-darkgray text-2xl">we've added your card details</p>
@@ -214,7 +230,7 @@
         Continue
       </button>
     </div>
- </section>
+ </section> --->
 
 
 
