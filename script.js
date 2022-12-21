@@ -1,7 +1,9 @@
 "use strict";
 //hidden section
-const hiddenSection = document.getElementById('hid')
+const hiddenSection = document.getElementById('hid');
+const formDiv = document.getElementById('hidde');
 
+//
 const cvcNumber = document.getElementById("cvc");
 const NumberOfCv = document.getElementById("cv")
 const frontCardNumber = document.getElementById("card-number")
@@ -175,7 +177,8 @@ function validateCvc(params) {
 
 
 function showHidSection(params) {
-    hiddenSection.classList.remove('hidden')
+    hiddenSection.classList.remove('hidden');
+    formDiv.classList.add('hidden');
 }
 
 
