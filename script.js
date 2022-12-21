@@ -45,10 +45,12 @@ console.log(nullError)
 
 function validateCardName(params) {
 
+   /* const name = frontCardName.value;
+    const namesArr = Array.from(String(name), String)*/
     
     const numbers = /^[0-9]+$/;
     const letters = /^[A-Za-z]+$/
-    //const letterspace = /^[A-Za-z\s]*$/
+    const letterspace = /^[A-Za-z\s]*$/
 
 
    if (frontCardName.value == "" || frontCardName.value === null) {
@@ -65,7 +67,7 @@ function validateCardName(params) {
     nameErrorMsg.classList.add('hidden')
     frontCardName.style.borderBlockColor = "green"
     cardHolderName.innerHTML = frontCardName.value+" "
-   
+    
 
     
  }
