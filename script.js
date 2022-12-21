@@ -2,14 +2,17 @@
 //hidden section
 const hiddenSection = document.getElementById('hid');
 const formDiv = document.getElementById('hidde');
-
-//
+const continueBtn = document.getElementById('continue')
 const cvcNumber = document.getElementById("cvc");
 const NumberOfCv = document.getElementById("cv")
+
+//card names and number
 const frontCardNumber = document.getElementById("card-number")
 const frontCardName = document.getElementById("card-holder");
 const frontCardMonth = document.getElementById("month");
 const frontCardYear = document.getElementById("year");
+
+//error messages
 const numberErrorMsg = document.getElementById("number-error");
 const nameErrorMsg = document.getElementById("name-error");
 const expiryError = document.getElementById("expiry-error");
@@ -61,7 +64,7 @@ function validateCardName(params) {
     nullError.classList.add('hidden')
     nameErrorMsg.classList.add('hidden')
     frontCardName.style.borderBlockColor = "green"
-    cardHolderName.innerHTML = frontCardName.value
+    cardHolderName.innerHTML = frontCardName.value+" "
    
 
     
@@ -175,19 +178,25 @@ function validateCvc(params) {
 }
 
 
-
-/*function showHidSection(params) {
-    //hiddenSection.classList.remove('hidden');
-    //formDiv.classList.add('hidden');
-
-    if (validateCvc && validateYear && validateYear && validate) {
-        
+function showHidSection(params) {
+    const nnumbers = /^[0-9]+$/;
+    if (frontCardNumber.value.length >= 16 && month.value.match(nnumbers)) {
+        hiddenSection.classList.remove('hidden');
+        formDiv.classList.add('hidden');
     }
-} */
+
+ 
+}   
+
+
+function Continue(params) {
+    hiddenSection.classList.add('hidden');
+    formDiv.classList.remove('hidden');
+}
 
 
 
-
+continueBtn.addEventListener('click', Continue)
 //FUNCTIONS FOR SUBMIT CLICKS
 
 submitBtn.addEventListener(
@@ -205,28 +214,36 @@ function go(params) {
  * CLICK EVENTS **********************************************
  * ***********************************************************
  */
+
+//VALIDATE CARD NAMES 
 submitBtn.addEventListener(
     'click', validateCardName
 )
 
+
+//VALIDATE CARDNUMBERS
 submitBtn.addEventListener(
     'click', ValidateCardNum
 )
 
+
+//VALIDATE CARDMONTH
 submitBtn.addEventListener(
     'click', validateMonth
 )
 
+//VALIDATE CARDYEAR
 submitBtn.addEventListener(
     "click", validateYear
 )
 
 
-
+//VALIDATE CARD VCV
 submitBtn.addEventListener(
     "click",validateCvc
 )
 
-/*submitBtn.addEventListener(
+//VALIDATE SUBMITBUTTON
+submitBtn.addEventListener(
    'click', showHidSection
-) */
+) 
