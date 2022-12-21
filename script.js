@@ -176,10 +176,14 @@ function validateCvc(params) {
 
 
 
-function showHidSection(params) {
-    hiddenSection.classList.remove('hidden');
-    formDiv.classList.add('hidden');
-}
+/*function showHidSection(params) {
+    //hiddenSection.classList.remove('hidden');
+    //formDiv.classList.add('hidden');
+
+    if (validateCvc && validateYear && validateYear && validate) {
+        
+    }
+} */
 
 
 
@@ -223,6 +227,6 @@ submitBtn.addEventListener(
     "click",validateCvc
 )
 
-submitBtn.addEventListener(
+/*submitBtn.addEventListener(
    'click', showHidSection
-)
+) */
